@@ -122,6 +122,14 @@ function getPasswordOptions() {
     alert('must pick at least one character type')
     return
   } 
+  var passwordOptions = {
+    length: length,
+    wantSpecialChar: wantSpecialChar,
+    wantNumbers: wantNumbers,
+    wantUppercase: wantUppercase,
+    wantLowercase: wantLowercase
+  }
+  return passwordOptions
 }
 
 // Function for getting a random element from an array
