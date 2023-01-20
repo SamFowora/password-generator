@@ -102,13 +102,34 @@ var upperCasedCharacters = [
   // String randomised characters based on options user chosen
   // Display string in box
 function getPasswordOptions() {
+  
+  // if statements to store options in variable -
+  var length = parseInt(prompt('How long do you want your password to be (between 10 & 64)'))
+  if (isNaN(length) === true) {
+    alert('must be integer value')
+    return
+  } 
+  if (length <10 || length >64) {
+    alert('must be between 10 & 64')
+    return
+  }
+  var wantSpecialChar = confirm ('do you want special characters')
+  var wantNumbers = confirm ('do you want special characters')
+  var wantUppercase = confirm ('do you want special characters')
+  var wantLowercase = confirm ('do you want  characters')
 
+  if (wantSpecialChar === false && wantNumbers === false && wantLowercase === false && wantUppercase) {
+    alert('must pick at least one character type')
+    return
+  } 
 }
 
 // Function for getting a random element from an array
 // Should return random element ""
 function getRandom(arr) {
-
+  var randIndex = Math.floor(Math.random() * arr.length)
+  var randArray = arr[randIndex]
+  return randArray;
 }
 
 // Function to generate password with user input
