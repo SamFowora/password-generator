@@ -103,7 +103,7 @@ var upperCasedCharacters = [
   // Display string in box
 function getPasswordOptions() {
   
-  // if statements to store options in variable -
+  // if statements to store options in variable
   var length = parseInt(prompt('How long do you want your password to be (between 10 & 64)'))
   if (isNaN(length) === true) {
     alert('must be integer value')
@@ -114,9 +114,9 @@ function getPasswordOptions() {
     return
   }
   var wantSpecialChar = confirm ('do you want special characters')
-  var wantNumbers = confirm ('do you want special characters')
-  var wantUppercase = confirm ('do you want special characters')
-  var wantLowercase = confirm ('do you want  characters')
+  var wantNumbers = confirm ('do you want numbers')
+  var wantUppercase = confirm ('do you want uppercase characters')
+  var wantLowercase = confirm ('do you want lowercase characters')
 
   if (wantSpecialChar === false && wantNumbers === false && wantLowercase === false && wantUppercase) {
     alert('must pick at least one character type')
@@ -178,7 +178,7 @@ function generatePassword() {
     console.log(endPassword)
   }
 
-  for(var i = 0; guaranteedCharacters.length; i++) {
+  for(var i = 0; i<guaranteedCharacters.length; i++) {
     endPassword[i] = guaranteedCharacters[i]
   }
   console.log(endPassword)
