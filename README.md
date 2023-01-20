@@ -11,7 +11,7 @@ Though a few bugs (who have really earned their name considering how minor, but 
 
 ## Installation
 
-[Deployed site screenshot](images/pwgendeployed.png)
+[Deployed site screenshot](password-generator/images/pwgendeployed.png)
 
 ## Usage
 
