@@ -1,5 +1,7 @@
 # password-generator
 
+https://samfowora.github.io/password-generator/
+
 ## Description
 
 This is a password generator, giving the randomised option of lowercase, uppercase, numeric and special characters.
@@ -9,7 +11,7 @@ Though a few bugs (who have really earned their name considering how minor, but 
 
 ## Installation
 
-N/A
+[alt text](images/pwgendeployed.png)
 
 ## Usage
 
