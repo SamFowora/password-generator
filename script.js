@@ -129,7 +129,7 @@ function getPasswordOptions() {
     wantUppercase: wantUppercase,
     wantLowercase: wantLowercase
   }
-  console.log(passwordOptions);
+  // console.log(passwordOptions);
   return passwordOptions
 }
 
@@ -144,7 +144,7 @@ function getRandom(arr) {
 // Function to generate password with user input
 // 
 function generatePassword() { 
-  console.log('hello')
+  // console.log('hello')
   var options = getPasswordOptions()
 
   var endPassword = [];
@@ -155,10 +155,10 @@ function generatePassword() {
   
   
   if (options.wantSpecialChar) {
-    console.log(options,"what's up")
+    // console.log(options,"is this on?")
     possibleCharacters = possibleCharacters.concat(specialCharacters)
     guaranteedCharacters.push(getRandom(specialCharacters))
-    console.log(possibleCharacters, guaranteedCharacters)
+    // console.log(possibleCharacters, guaranteedCharacters)
   }
   if (options.wantNumbers) {
     possibleCharacters = possibleCharacters.concat(numericCharacters)
@@ -175,15 +175,15 @@ function generatePassword() {
   for(var i = 0; i<options.length; i++) {
     var possibleCharacter = getRandom(possibleCharacters)
     endPassword.push(possibleCharacter)
-    console.log(endPassword)
+    // console.log(endPassword)
   }
 
   for(var i = 0; i<guaranteedCharacters.length; i++) {
     endPassword[i] = guaranteedCharacters[i]
   }
-  console.log(endPassword)
-  console.log(possibleCharacters)
-  console.log(guaranteedCharacters)
+  // console.log(endPassword)
+  // console.log(possibleCharacters)
+  // console.log(guaranteedCharacters)
   return endPassword.join('');
 }
 // Already implemented in HTML
